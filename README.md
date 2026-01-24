@@ -1,94 +1,154 @@
-# EchoDeck Community & Feedback
+EchoDeck: The Sovereign Social Reader
 
-<div align="center">
-  <img src="https://your-logo-url.com/logo.png" alt="EchoDeck Logo" width="120" />
-  <h1>EchoDeck</h1>
-  <p><strong>The Gamified, Hybrid Social Reader for the Decentralized Web.</strong></p>
-  
-  <a href="https://echodeck.io">🌐 Official Website</a> | 
-  <a href="https://github.com/your-org/echodeck-community/issues">🐛 Report Bug</a> | 
-  <a href="https://github.com/your-org/echodeck-community/discussions">💡 Request Feature</a>
-</div>
+<div align="center"> <img src="https://your-logo-url.com/logo.png" alt="EchoDeck Logo" width="120" />
 
----
 
-## 👋 Welcome to the EchoDeck Community
+<h3><strong>Break the Walls. Own Your Voice. Bridge the Worlds.</strong></h3> <p>The first censorship-resistant platform bridging the depth of the Open Web (RSS) with the sovereignty of the Social Web (Nostr).</p>
 
-This repository serves as the central hub for the **EchoDeck community**. While the core codebase of EchoDeck remains closed-source during our Beta phase to protect our unique anti-spam and growth mechanisms, we believe in building *with* the community, not just for it.
+<p> <a href="https://echodeck.io">🌐 Request Access</a> • <a href="#-the-manifesto">📜 Manifesto</a> • <a href="#-architecture--technology">🏗 Architecture</a> • <a href="#-the-invite-protocol">🔑 Invite Codes</a> </p> </div>
+📜 The Manifesto: Breaking the Three Walls
 
-Use this repository to submit feedback, track public roadmap items, and discuss the future of the Nostr ecosystem.
+EchoDeck was born from a refusal to accept the fractured state of the modern internet. We identified three "Walls" that restrict human potential, and we built EchoDeck to tear them down.
+Wall 1: The Wall of Censorship
 
----
+Centralized platforms have become arbiters of truth, erasing voices at the whim of governments or corporations.
 
-## 💎 Product Philosophy: The "Dual-Track" Design
+    Our Solution: EchoDeck is built on Nostr, a decentralized, censorship-resistant protocol. Your identity (Private Key) is yours alone. No admin can delete your account. No server can ban your voice.
 
-EchoDeck is not just another Nostr client. It is an experiment in bridging the gap between the polished UX of Web2 and the sovereignty of Web3.
+Wall 2: The Wall of Access
 
-We built EchoDeck on a **Dual-Track Architecture**:
+For millions of users in restrictive network environments (e.g., behind the GFW), accessing the free world is technically difficult and legally risky.
 
-### Track A: The Protocol Layer (Decentralized)
-* **Sovereignty First:** Your private keys never leave your device (encrypted local storage or extension).
-* **Censorship Resistance:** All social content (Notes, Articles, Zaps) is fetched directly from and published to Nostr Relays. EchoDeck does not "own" your social graph.
-* **Portability:** If EchoDeck disappears tomorrow, your identity and followers remain safe on the protocol.
+    Our Solution: Resilient Relay Proxies. EchoDeck creates a secure tunnel to the decentralized world. We deploy a distributed network of edge-accelerated relays and reverse proxies that allow users to connect to the global Nostr network seamlessly, without the need for complex VPNs or specialized networking knowledge. Information should flow like water.
 
-### Track B: The Meta Layer (Curated)
-To solve the "Cold Start" problem and the "Spam" issues plaguing decentralized networks, we introduced a server-side **Meta Layer**:
-* **The Viral Loop:** A gamified invitation system that rewards "Proof of Engagement." Users must contribute value (posting, curating) to earn the right to invite others.
-* **Hybrid RSS Engine:** A server-assisted fetcher that bridges the legacy web (RSS/Atom) into the Nostr ecosystem, allowing you to subscribe to blogs and news outlets directly alongside your social feed.
-* **Quest System:** An onboarding engine that guides new users from "Zero" to "Hero" through interactive tasks.
+Wall 3: The Wall of Content
 
----
+Web3 is sovereign but often shallow. Web2 is deep but walled off. The "Gap" between high-quality blogs (RSS) and social discussion (Social Media) stifles knowledge transfer.
 
-## 🏗 Technical Architecture
+    Our Solution: The Unified Bridge. We treat RSS and Nostr as equals. EchoDeck allows you to consume Web2 content with Web3 sovereignty—and for the first time, migrate value (Zaps/Tips) from the new world back to the old.
 
-EchoDeck is built for performance, leveraging the latest React ecosystem while maintaining a lightweight footprint.
+🏛 The Two Pillars
 
-### The Stack
-* **Frontend framework:** [Next.js 14](https://nextjs.org/) (App Router) for server-side rendering and optimal SEO.
-* **UI System:** [Tailwind CSS](https://tailwindcss.com/) + [Shadcn/UI](https://ui.shadcn.com/) for a pixel-perfect, accessible interface.
-* **State Management:** [Zustand](https://github.com/pmndrs/zustand) to handle the high-frequency updates of WebSocket streams without re-render fatigue.
-* **Editor:** A customized [Tiptap](https://tiptap.dev/) implementation supporting Markdown shortcuts and client-side image compression.
+EchoDeck is not just a client; it is a fusion engine supported by two massive pillars, enhanced by Artificial Intelligence.
+1. The Nostr Feed (The Social Graph)
 
-### Infrastructure & Deployment
-* **Edge-Ready:** Deployed on serverless infrastructure to ensure low latency globally.
-* **Database:** A managed PostgreSQL cluster handles the "Meta Layer" (User Tiers, Quests, Invite Trees) with strict Row Level Security (RLS).
-* **Nostr Engine:** We use a custom lightweight wrapper around `nostr-tools` to manage subscription lifecycles and event deduplication efficiently.
+Experience the world as it actually is, not as an algorithm decides you should see it.
 
----
+    True Feed: We rebuilt the timeline sorting engine to prioritize temporal reality over engagement hacking. You see the raw, unfiltered pulse of the planet.
 
-## 🛡️ Security & Privacy
+    Immutable Interactions: Every Like, Repost, and Reply is cryptographically signed and broadcasted to multiple relays. History cannot be rewritten.
 
-* **Non-Custodial:** We do not store your `nsec` (private key) on our servers. Login is handled client-side.
-* **NIP-07 Support:** We strongly recommend using browser extensions (like Alby or nos2x) for the highest security level.
-* **Metadata:** Only public signals (public keys, task completion status) and subscription preferences are synced to our Meta Layer to enable cross-device synchronization.
+    Value for Value (Zap System): We integrated Bitcoin Lightning (Zaps). Don't just "Like" a deep dive; tip the author. We incentivize depth over clickbait.
 
----
+    Trend & Discovery: A decentralized Trend module aggregates the hottest topics across the relay network, while our Explore engine allows granular search across the global note repository.
 
-## 🗺️ Public Roadmap
+    Smart Following: Discover creators in the feed and follow them instantly. Your social graph is portable—it moves with you, not us.
 
-We are currently in **Closed Beta (Phase 1)**.
+2. The RSS Reader (The Content Graph)
 
-- [x] **Core Social:** Feed, Profiles, Long-form Articles (NIP-23).
-- [x] **RSS Integration:** Subscribe to any Web2 URL.
-- [x] **Viral Invite System:** Tiered access and invite codes.
-- [x] **Pro Membership:** Stripe integration for power users.
-- [ ] **Mobile App:** Native wrapper (PWA/React Native).
-- [ ] **AI Agents:** Smart content summarization and personalized discovery.
-- [ ] **Community Communities:** NIP-72 support.
+The depth of the legacy web, modernized for the decentralized era.
 
----
+All fetches are aggregated into the "Reads" module:
 
-## 🤝 How to Contribute
+    For You: Curated, high-quality sources selected by the EchoDeck editorial DAO. Free to read, zero setup required.
 
-We value your input! Here is how you can help:
+    My Feed: Your personal, sovereign subscription list.
 
-1.  **Bug Reports:** Found a glitch? Open an [Issue](https://github.com/your-org/echodeck-community/issues).
-2.  **Feature Requests:** Have a cool idea? Start a [Discussion](https://github.com/your-org/echodeck-community/discussions).
-3.  **Spread the Word:** Share your invite codes (if you have unlocked them!) and help us grow the network responsibly.
+    Saved: A cross-protocol bookmark system. Save a Nostr Note next to a New York Times article.
 
----
+The Power Tools:
 
-<div align="center">
-  <p>Built for the <strong>Nostr</strong> Protocol.</p>
-  <p>© 2026 EchoDeck Team</p>
-</div>
+    Universal Parser (RSSHub Integration): Paste any URL. Our built-in private RSSHub instance attempts to parse it into a readable feed. Twitter profiles, Telegram channels, standard blogs—we bridge them all.
+
+    Nostr Bots for RSS: Every RSS feed you subscribe to is mirrored as a Nostr Bot on our platform. This means you can interact with a static blog post as if it were a social user—reply to it, zap it, and share it.
+
+    Manage Subscriptions: Full OPML import/export support. You own your data.
+
+3. The AI Layer (The Amplifier)
+
+We use LLMs not to generate content, but to filter noise and enhance understanding.
+
+    "Toxic" Summaries: Boring summaries are useless. Our AI reads RSS articles and gives you a sharp, witty, and sometimes "Toxic" TL;DR to help you decide if it's worth your time.
+
+    Quality Grading: AI assigns a "Depth Score" to articles. Skip the fluff, read the insights.
+
+    Anti-Spam Shield: A client-side AI filter that cleans your Nostr feed of bots and crypto-scams without central censorship.
+
+🏗 Architecture & Technology
+
+How do we deliver a seamless, Web2-like experience on top of fragmented Web3 protocols?
+The Stack
+
+    Core: Next.js 14 (App Router) for server-side rendering and SEO.
+
+    UI: Tailwind CSS + Shadcn/UI.
+
+    State: Zustand for high-frequency WebSocket state management.
+
+The "Resilient" Infrastructure
+
+To fulfill our promise of breaking the Wall of Access, we engineered a unique networking layer:
+
+    Edge Relay Proxies: We don't just connect you to Damus or Eden. EchoDeck routes WebSocket traffic through a mesh of ephemeral edge functions. This obfuscates the traffic signature, allowing users in restrictive regions to maintain stable connections to global Relays.
+
+    Server-Side RSS Aggregation: Instead of your browser fetching RSS (leaking your IP to publishers), our servers fetch, parse, and normalize the data, delivering it to you via a clean API. Privacy is default.
+
+The Hybrid Database
+
+    PostgreSQL + Prisma: While content lives on Relays, your experience (User Tiers, Quest Progress, Read Status) lives in our high-performance Meta Layer.
+
+    Non-Custodial Auth: We use NIP-07 or local encryption. We verify who you are, but we never hold the keys to become you.
+
+🔑 The Invite Protocol (Gamified Growth)
+
+EchoDeck is currently in Closed Beta. To maintain the quality of the network and prevent the "Eternal September" effect, we utilize a tiered access system based on Proof of Engagement.
+Tier 0: The Genesis Nodes
+
+    Who: Industry leaders, top KOLs, and technical contributors.
+
+    Power: Granted 10 Genesis Codes. These codes are immune to decay.
+
+Tier 1: The Citizens
+
+    Who: Users invited by a Genesis Node.
+
+    Initial State: 0 Invites. You are here to consume and learn.
+
+    The Awakening: To unlock the ability to invite others, you must complete the "Awakening Quests":
+
+        Subscribe to 3 RSS Feeds (Curate your input).
+
+        Publish your first Hello World note on Nostr (Prove your voice).
+
+    Reward: Upon completion, the contract unlocks 5 Invite Codes.
+
+Tier 2: The Explorers
+
+    Who: Users invited by Citizens.
+
+    Path: Similar quest structure, ensuring every new member adds value to the network before expanding it further.
+
+This system ensures that EchoDeck grows not through spam, but through active, educated participation.
+🗺 Roadmap
+
+    [x] Phase 1: Foundation. Hybrid Feed, RSS Engine, Proxy Network.
+
+    [x] Phase 2: The Bridge. Zap RSS, AI Summaries.
+
+    [x] Phase 3: The Virus. Gamified Invite System.
+
+    [ ] Phase 4: Mobile. Native iOS/Android Apps (React Native).
+
+    [ ] Phase 5: Communities. NIP-72 Groups implementation.
+
+🤝 Feedback & Community
+
+We are building this for the free thinkers, the builders, and the explorers.
+
+    Found a bug? Open an Issue
+
+    Want a feature? Start a Discussion
+
+    Need an Invite? Keep an eye on this repo. We drop Genesis Codes in the comments sporadically.
+
+<div align="center"> <p>Built with ❤️ and ⚡️ for the Sovereign Web.</p> <p>© 2026 EchoDeck Team</p> </div>
