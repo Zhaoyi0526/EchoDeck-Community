@@ -1,6 +1,6 @@
 EchoDeck: The Sovereign Social Reader
 
-<div align="center"> <img src="./public/logo.png" alt="EchoDeck Logo" width="120" />
+<div align="center"> <img src="./public/images/logo.png" alt="EchoDeck Logo" width="120" />
 
 
 <h3><strong>Break the Walls. Own Your Voice. Bridge the Worlds.</strong></h3> <p>The first censorship-resistant platform bridging the depth of the Open Web (RSS) with the sovereignty of the Social Web (Nostr).</p>
