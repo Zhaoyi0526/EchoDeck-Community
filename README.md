@@ -143,12 +143,16 @@ This system ensures that EchoDeck grows not through spam, but through active, ed
 
 🤝 Feedback & Community
 
-We are building this for the free thinkers, the builders, and the explorers.
+We are building EchoDeck in public. Your feedback shapes the future of this product.
+我们公开构建 EchoDeck，您的反馈将决定产品的未来。
 
-    Found a bug? Open an Issue
+- **🐛 Found a Bug?** [Open an Issue](https://github.com/Zhaoyi0526/EchoDeck-Community/issues/new?template=bug_report.md)
+  (遇到 Bug 了？提交工单，请务必附上截图和复现步骤)
 
-    Want a feature? Start a Discussion
+- **✨ Have a Feature Idea?** [Request a Feature](https://github.com/Zhaoyi0526/EchoDeck-Community/issues/new?template=feature_request.md)
+  (有新功能建议？告诉我们需要什么)
 
-    Need an Invite? Keep an eye on this repo. We drop Genesis Codes in the comments sporadically.
+- **💬 General Discussion?** [Join Discussions](https://github.com/Zhaoyi0526/EchoDeck-Community/discussions)
+  (想聊聊 Web3、RSS 或只是打个招呼？来讨论区)
 
 <div align="center"> <p>Built with ❤️ and ⚡️ for the Sovereign Web.</p> <p>© 2026 EchoDeck Team</p> </div>
